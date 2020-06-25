@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+
+    /* style */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.rowContainer {
+    display: flex;
+}
+
+.button {
+    flex-basis: 25%;
+
+    /* style */
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid darkslategrey;
+    background-color: gainsboro;
+    color: darkslategrey;
+    cursor: pointer;
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.display {
+    width: 100%;
+    background-color: darkslategrey;
+    color: whitesmoke;
+    font-size: 2em;
+    border: 1px solid darkslategrey;
+    padding: 10px 20px;
+}
+
+.operator,
+.negative,
+.equals {
+    background-color: orange;
+    color: whitesmoke;
+}
+
+.clear {
+    background-color: crimson;
+    color: whitesmoke;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    font-weight: bolder;
+}
+
+.history {
+    width: 70%;
+    margin: 30px auto 0 auto;
+    overflow: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid darkslategrey;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+th {
+    background-color: orange;
+    color: whitesmoke;
+}
+
+tr:nth-child(even) {
+    background-color: gainsboro;
+}
+
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+
+    .display {
+        padding: 5px 10px;
+        max-height: 150px;
+    }
+
+    .history {
+        width: 100%;
+        font-size: x-small;
+    }
+}
